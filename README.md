@@ -1,17 +1,17 @@
 # Customer-Data-Processing
 
-##Context
-This assignment is designed to evaluate your ability to read and write file formats of common types used in Data Science, and to manipulate complex data into different representations. The tasks provided here are indicative of Data Pre-processing workloads which are common to all Data Science projects. The techniques learned and evaluated in this module will prepare you for further theoretical and applied topics later on in the programme, where you will further develop your skills.
+## Context
+This project is designed to evaluate the ability to read and write file formats of common types used in Data Science, and to manipulate complex data into different representations. The tasks provided here are indicative of Data Pre-processing workloads which are common to all Data Science projects. The techniques learned and evaluated in this module will prepare for further theoretical and applied topics later on in the programme, where you will further develop your skills.
 This assignment makes use of an extensive collection of mocked data. These have been generated with some resemblance to real world values and distributions, including some relations between data elements.
 Whilst teaching, both asynchronous and synchronous, stops for this module by Teaching Week 4, ad-hoc support will be available until submission of the assignment on the MS Teams site.
 
-##Background
+## Background
 You have been given a collection of data from a company wishing to process its customer records for business purposes (acw_user_data.csv). The existing systems in-place at the company only export to a CSV file, and this is not in an appropriate format for analysis. You have been given the task of preparing this data for further analyses by your colleagues within the company, including representation changes, filtering, and deriving some new attributes / metrics for them.
 These data include attributes such as first name, second name, credit card number, marital status, and even contains data on the customer’s car. The number of records provided is significant, and therefore it is expected that solutions are robust to varying types of data, and varying values, offering a programmatic solution.
 
-##Tasks
+## Tasks
 
-##Data Processing (70%)
+### Data Processing 
 
 Using standard python (No pandas / seaborn) with default libraries (os, sys, time, json, csv) you have been given the following tasks:
 
@@ -22,14 +22,14 @@ a. Vehicle - consists of make, model, year, and type
 b. Credit Card - consists of start date, end date, number, security code, and IBAN.
 c. Address - consists of the main address, city, and postcode.
 
-For this task, it may be worthwhile inspecting the CSV headers to see which data columns may correspond to these above.
-Note: Ensure that the values read in are appropriately cast to their respective types.
+   For this task, it may be worthwhile inspecting the CSV headers to see which data columns may correspond to these above.
+   Note: Ensure that the values read in are appropriately cast to their respective types.
 
 3. The client informs you that they have had difficulty with errors in the dependants column. Some entries are empty (i.e. “ “ or “”), which may hinder your conversion from Task 2. These should be changed into something meaningful when encountered.
 Print a list where all such error corrections take place.
 E.g. Problematic rows for dependants: [16, 58, 80, 98]
 
-4.Write all records to a processed.json file in the JSON data format. This should be a list of dictionaries, where each index of the list is a dictionary representing a singular person.
+4. Write all records to a processed.json file in the JSON data format. This should be a list of dictionaries, where each index of the list is a dictionary representing a singular person.
 
 5. You should create two additional file outputs, retired.json and employed.json, these should contain all retired customers (as indicated by the retired field in the CSV), and all employed customers respectively (as indicated by the employer field in the CSV) and be in the JSON data format.
 
