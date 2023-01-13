@@ -41,8 +41,20 @@ a. Add, and calculate appropriately, this new attribute. It should represent the
 b. Sort these records by that new metric, in ascending order.
 c. Store the output file out as a JSON format, for a commute.json file.
 
-7. You have been tasked with calculating some additional metrics which will be used for ranking customers. You should create a new data attribute for our customers called “Salary-Commute”. Reading in from processed.json:
-a. Add, and calculate appropriately, this new attribute. It should represent the Salary that a customer earns, per mile of their commute.
-  i. Note: If a person travels 1 or fewer commute miles, then their salary-commute would be just their salary.
-b. Sort these records by that new metric, in ascending order.
-c. Store the output file out as a JSON format, for a commute.json file.
+### Data Visualisation
+
+Using Pandas and Seaborn
+Your client wishes to understand the data they have on their customers a bit more by use of visualisations. With use of Pandas and Seaborn read in the original CSV file provided with the assignment.
+
+1. Obtain the Data Series for Salary, and Age, and calculate the following:
+   a. Mean Salary
+   b. Median Age
+2. Perform univariate plots of the following data attributes:
+   a. Age, calculating how many bins would be required for a bin_width of 5.
+   b. Dependents, fixing data errors with seaborn itself.
+   c. Age (of default bins), conditioned on Marital Status
+3. Perform multivariate plots with the following data attributes:
+   a. Commuted distance against salary.
+   b. Age against Salary
+   c. Age against Salary conditioned by Dependants
+4. Your client would like the ability to save the plots which you have produced. Provide a Notebook cell which can do this.
